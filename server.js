@@ -7,6 +7,7 @@ import categoryRoutes from './routes/categoryRoutes.js';
 import productRoutes from './routes/productRoutes.js';
 import groupCartRoutes from './routes/groupCartRoutes.js';
 import deliverySlotRoutes from './routes/deliverySlotRoutes.js';
+import cors from "cors";
 
 dotenv.config();
 
