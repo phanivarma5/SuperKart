@@ -8,7 +8,7 @@ export default function DeliverySlotPicker({ onHold, selectedSlotId }) {
 
   const load = async () => {
     setLoading(true)
-    const { data } = await axios.get('/api/delivery-slots', { params: range })
+    const { data } = await axios.get('https://superkartbackend.onrender.com/api/delivery-slots', { params: range })
     setSlots(data)
     setLoading(false)
   }

@@ -15,7 +15,7 @@ export default function GroupCart() {
   // ✅ Fetch all carts (no id in URL)
   const fetchCarts = async () => {
     try {
-      const { data } = await axios.get("/api/v1/group-carts");
+      const { data } = await axios.get("https://superkartbackend.onrender.com/api/v1/group-carts");
       setCarts(Array.isArray(data) ? data : []);
     } catch (e) {
       console.error(e);
@@ -29,7 +29,7 @@ export default function GroupCart() {
   const fetchData = async (id = activeCartId) => {
     if (!id) return;
     try {
-      const { data } = await axios.get(`/api/v1/group-carts/${id}`);
+      const { data } = await axios.get(`https://superkartbackend.onrender.com/api/v1/group-carts/${id}`);
       setItems(data.items || []);
     } catch (e) {
       console.error("Failed to fetch cart data", e);
@@ -52,7 +52,7 @@ export default function GroupCart() {
 
   const handleRemoveItem = async (itemId) => {
     try {
-      await axios.delete(`/api/v1/group-carts/${activeCartId}/items/${itemId}`);
+      await axios.delete(`https://superkartbackend.onrender.com/api/v1/group-carts/${activeCartId}/items/${itemId}`);
       fetchData();
     } catch (e) {
       console.error("Failed to remove item", e);
@@ -62,7 +62,7 @@ export default function GroupCart() {
   const handleJoinCart = async () => {
     if (!cartIdInput.trim()) return;
     try {
-      const { data } = await axios.get(`/api/v1/group-carts/${cartIdInput}`);
+      const { data } = await axios.get(`https://superkartbackend.onrender.com/api/v1/group-carts/${cartIdInput}`);
       if (data?._id) {
         localStorage.setItem("activeCartId", data._id);
         setActiveCartId(data._id);
@@ -80,7 +80,7 @@ export default function GroupCart() {
     if (!newCartName.trim()) return;
     try {
       // ✅ send cart name in request body
-      const { data } = await axios.post("/api/v1/group-carts", {
+      const { data } = await axios.post("https://superkartbackend.onrender.com/api/v1/group-carts", {
         name: newCartName,
       });
       if (data?._id) {

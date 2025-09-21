@@ -53,7 +53,7 @@ const CartPage = () => {
       setLoading(true);
 
       // Create order on backend
-      const { data } = await axios.post("/api/v1/payment/razorpay/order", {
+      const { data } = await axios.post("https://superkartbackend.onrender.com/api/v1/payment/razorpay/order", {
         amount: cart.reduce((acc, item) => acc + item.price, 0) * 100, // in paise
         cart,
         deliveryDate: selectedDate,
@@ -70,7 +70,7 @@ const CartPage = () => {
         handler: async function (response) {
           try {
             // Verify payment on backend
-            await axios.post("/api/v1/payment/razorpay/verify", {
+            await axios.post("https://superkartbackend.onrender.com/api/v1/payment/razorpay/verify", {
               razorpay_order_id: response.razorpay_order_id,
               razorpay_payment_id: response.razorpay_payment_id,
               razorpay_signature: response.razorpay_signature,
