@@ -1,0 +1,168 @@
+.gc-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f4f6f8;
+  padding: 40px 20px;
+}
+
+.gc-card {
+  background: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+}
+
+.gc-title {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 28px;
+  color: #333;
+}
+
+.gc-section {
+  margin-bottom: 24px;
+}
+
+.gc-input-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.gc-input-group input,
+.gc-section input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.gc-input-group input:focus,
+.gc-section input:focus {
+  border-color: #007bff;
+}
+
+.gc-input-group button {
+  padding: 10px 18px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.gc-input-group button:hover {
+  background: #0056b3;
+}
+
+.gc-share-btn {
+  padding: 10px 18px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.gc-share-btn:hover {
+  background: #1e7e34;
+}
+
+.gc-share-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.gc-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.gc-list-item {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: #fafafa;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gc-list-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.gc-loading,
+.gc-error {
+  padding: 24px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.gc-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gc-item-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out;
+}
+
+.gc-item-card:hover {
+  transform: scale(1.03);
+}
+
+.gc-item-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.gc-item-price {
+  color: #28a745;
+  font-weight: 500;
+  margin: 0.2rem 0;
+}
+
+.gc-item-qty {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.gc-remove-btn {
+  margin-top: 0.5rem;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.gc-remove-btn:hover {
+  background: #e60000;
+}
+
+.gc-empty {
+  font-style: italic;
+  color: #777;
+}
