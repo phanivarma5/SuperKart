@@ -26,7 +26,9 @@ import AdminOrders from "./pages/Admin/AdminOrders";
 import GroupCart from './pages/GroupCart';
 import { Routes, Route } from "react-router-dom";
 import DeliverySlots from "./pages/DeliverySlots";
+import axios from "axios";
 
+axios.defaults.baseURL = process.env.REACT_APP_API_URL;
 function App() {
   return (
     <>
