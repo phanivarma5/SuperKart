@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SuperKart/static/css/main.242b70b5.css",
+    "main.js": "/SuperKart/static/js/main.0e21ea99.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/SuperKart/static/js/787.c4e7f8f9.chunk.js",
+    "index.html": "/SuperKart/index.html",
+    "main.242b70b5.css.map": "/SuperKart/static/css/main.242b70b5.css.map",
+    "main.0e21ea99.js.map": "/SuperKart/static/js/main.0e21ea99.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/SuperKart/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.242b70b5.css",
+    "static/js/main.0e21ea99.js"
+  ]
+}
