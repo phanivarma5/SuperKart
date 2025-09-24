@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/SuperKart/static/css/main.242b70b5.css",
-    "main.js": "/SuperKart/static/js/main.0e21ea99.js",
-    "static/js/787.c4e7f8f9.chunk.js": "/SuperKart/static/js/787.c4e7f8f9.chunk.js",
-    "index.html": "/SuperKart/index.html",
-    "main.242b70b5.css.map": "/SuperKart/static/css/main.242b70b5.css.map",
-    "main.0e21ea99.js.map": "/SuperKart/static/js/main.0e21ea99.js.map",
-    "787.c4e7f8f9.chunk.js.map": "/SuperKart/static/js/787.c4e7f8f9.chunk.js.map"
+    "main.css": "/tree/main/client/static/css/main.242b70b5.css",
+    "main.js": "/tree/main/client/static/js/main.09c9f4f6.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/tree/main/client/static/js/787.c4e7f8f9.chunk.js",
+    "index.html": "/tree/main/client/index.html",
+    "main.242b70b5.css.map": "/tree/main/client/static/css/main.242b70b5.css.map",
+    "main.09c9f4f6.js.map": "/tree/main/client/static/js/main.09c9f4f6.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/tree/main/client/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.242b70b5.css",
-    "static/js/main.0e21ea99.js"
+    "static/js/main.09c9f4f6.js"
   ]
 }
