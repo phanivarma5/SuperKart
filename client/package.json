@@ -1,4 +1,5 @@
 {
+  "homepage": "https://phanivarma5.github.io/SuperKart",
   "name": "client",
   "proxy": "http://localhost:8080",
   "version": "0.1.0",
@@ -9,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.1.7",
     "axios": "^1.2.5",
+    "gh-pages": "^6.3.0",
     "moment": "^2.29.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -23,6 +25,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
